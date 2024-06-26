@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA Hasanuddin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .header .logo {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 50px;
+            height: auto;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: green;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: gray;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .social-links {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .footer .social-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer .social-links a:hover {
+            color: #0056b3;
+        }
+
+        .footer .copyright {
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='image/ma hassanudin.jpg') }}" alt="Logo" class="logo">
+        <h1>MA Hasanuddin</h1>
+        <h2>Aliman. Solihan. Mujtahidan</h2>
+    </div>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/IMG_20231123_074052.jpg') }}" alt="Header Image">
+    </div>
+    <div class="container">
+        <h3>#Sejarah MA Hasanuddin</h3>
+        <p>Sejarah MA Hasanuddin didirikan pada tahun 2018 yang muncul dari gagasan dari ketua yayasan dan anggota yang lain. MA Hasanuddin memiliki siswa dan siswi tahun pertama sejumlah 18 murid dan mengalami kenaikan di tahun berikutnya. 
+        Siswa dan siswi MA Hasanuddin telah terdaftar resmi dilingkup kementerian agama maupun di dinas pendidikan, terbukti bahwa MA Hasanuddin telah memiliki NPSN dan juga NSM. Di tahun 2022 ini MA Hasanuddin sudah menjadi calon madrasah yang akan melaksanakan akreditasi.</p>
+
+        <h3>#Ruang lingkup MA Hasanuddin</h3>
+        <p>MA Hasanuddin kini sudah jauh berkembang. MA Hasanuddin sudah memiliki gedung dan ruangannya sendiri. Gedung yang didirikan mulai tahun 2018 ini memiliki 2 lantai dengan kapasitas ruang kelas yang cukup luas dan terbilang nyaman untuk proses belajar mengajar.</p>
+
+        <h3>#Intrakulikuler</h3>
+        <p>Osis MA Hasanuddin ( OSMADIN )<br>
+        Sebelum ke ekstrakulikuler MA Hasanuddin memiliki organisasi intrakulikuler sebagai siswa induk yang ada di madrasah. Sebagai organisasi yang menaungi banyak sekali kegiatan maupun organisasi ekstrakulikuler lainnya. Osis MA Hasanuddin yang sering disingkat dengan OSMADIN tentunya juga belajar banyak hal mengenai jiwa kepemimpinan, mereka dipersiapkan untuk menjadi pemimpin masa depan yang berwawasan tinggi dan berakhlakul karimah.</p>
+
+        <h3>#OSMADIN</h3>
+        <p>Didalam organisasi ini kami juga melakukan Pemilu ( pemilihan umum ) untuk menentukan ketua osis di setiap periodenya. Kita belajar Demokrasi lewat sini.</p>
+
+        <p>Latihan dasar kepemimpinan osis<br>
+        Setelah pemilihan ketua dan pelantikan, osis akan dilatih untuk menjadi pemimpin di madrasah. Dasar kepemimpinan, pembuat program kerja, penyusunan proposal outbond, dll. adalah materi yang akan pengurus osis dapatkan disana.</p>
+    </div>
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/osis_mahass/" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com/@madrasahaliyahhasanuddin5382" target="_blank">YouTube</a>
+        </div>
+        <p class="copyright">© 2024 Sastra TIK</p>
+    </div>
+</body>
+</html>
